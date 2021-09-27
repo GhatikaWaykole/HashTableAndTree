@@ -1,7 +1,7 @@
 package BSTCompute;
 
 public class BSTStructure{
-    /* public Node insertNode (Node node,int val){
+    public Node insertNode (Node node,int val){
         if(node == null){
             return createNode(val);
         }
@@ -22,5 +22,5 @@ public class BSTStructure{
         node.left = null;
         node.right = null;
         return node;
-    } */
+    }
 }
