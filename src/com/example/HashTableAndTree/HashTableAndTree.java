@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class HashTableAndTree {
     public static void main(String args[]) {
-        String sentence = "To be or not to be";
+        String sentence = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
         HashTable<String, Integer> hashtable = new HashTable<>();
         String[] words = sentence.toLowerCase().split("");
         for (String word : words) {
