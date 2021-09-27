@@ -22,5 +22,7 @@ public class BSTCompute {
         root = a.insertNode(root,67);
         System.out.println(root.left.data+"right data"+root.right.data);
         System.out.println("size of the BST "+a.size(root));
+        a.search(root,63);
+        System.out.println("node 63 present "+a.search(root,63));
     }
 }

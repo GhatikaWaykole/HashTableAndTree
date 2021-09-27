@@ -24,6 +24,25 @@ public class BSTStructure <k extends Comparable<k>>{
         node.right = null;
         return node;
     }
+    public Node searchNode(Node node,int val){
+        if(node==null){
+            return node;
+        }
+        else if(val < node.data){
+            node.left = searchNode(node.left,val);
+        }
+        else if(val > node.data){
+            node.right = searchNode(node.right,val);
+        }
+        return node;
+    }
+    boolean search(Node node,int val){
+        node  =  searchNode(node,val);
+        if(node != null)
+            return true;
+        else
+            return false;
+    }
     /* computes number of nodes in tree */
    public int size(Node node)
     {
