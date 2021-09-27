@@ -1,7 +1,7 @@
 package BSTCompute;
 
-public class Node {
+public class Node<k extends  Comparable<k>>{
     int data;
-    Node left;
-    Node right;
+    Node<k> left;
+    Node<k> right;
 }
